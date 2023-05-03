@@ -45,31 +45,31 @@ def vis_ledige_sæder(sal_nummer):
 def vis_film_i_sal(sal_navn):
     if sal_navn in biograf:
         film = biograf[sal_navn]["film"]
-        print(f"I {sal_navn} vises filmen '{film}'.")
+        print(f"I {sal_navn} vises '{film}'.")
     else:
-        print("Ugyldigt biografsal.")
+        print("Den valgte sal eksisterer ikke.")
 
 
 while True:
-    print("Velkommen til biografen!")
-    print("Tilgængelige sale:")
+    print("Velkommen til din nye biograf automat!")
+    print("Ledige sale:")
     for biograf_navn in biograf:
         print(biograf_navn + " - " + biograf[biograf_navn]["film"])
     biograf_nr = input("Vælg en sal: ")
     biograf_navn = f"Sal {biograf_nr}"
     if biograf_navn not in biograf:
-        print("Ugyldigt biografsal.")
+        print("Den valgte sal eksisterer ikke.")
         print("\n ")
         continue
     vis_ledige_sæder(biograf_navn)
     række = int(input("Hvilken række vil du sidde i? "))
     if række < 0 or række >= biograf[biograf_navn]["rækker"]:
-        print("Ugyldig række.")
+        print("Den valgte række eksisterer ikke.")
         print("\n ")
         continue
     sæde = int(input("Hvilket sæde vil du sidde på? "))
     if sæde < 0 or sæde >= biograf[biograf_navn]["sæder_pr_række"]:
-        print("Ugyldigt sæde.")
+        print("Det valgte sæde eksisterer ikke.")
         print("\n ")
         continue
     buy_ticket(biograf_navn, række, sæde)
