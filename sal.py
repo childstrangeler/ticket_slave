@@ -19,10 +19,11 @@ for i in salnr:
     print(i, "har", rækker, "rækker, og", sæder,
           "sæder. Der er i alt", sæder_ialt, "sæder i salen")
 
-[a*b for (a, b) in zip(rækker, sæder)]
-rows = 3
-columns = 4
-mat = [[0 for row in range(rows)] for col in range(columns)]
-mat[col][row] = 1
 
-mat = [[0, 0, 0, 0], [0, 0, 0, 0]]
+# [a*b for (a, b) in zip(rækker, sæder)]
+# rækkes = 3
+# columns = 4
+# mat = [[0 for række in range(rækkes)] for col in range(columns)]
+# mat[col][række] = 1
+#
+# mat = [[0, 0, 0, 0], [0, 0, 0, 0]]
