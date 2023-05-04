@@ -1,13 +1,16 @@
 # opretter en dictionary ved navn biograf.
 biograf = dict({
-    "Sal 1": {  # opretter en biografsal ved navn "Sal 1".
-        "rækker": 5,  # sætter hvor mange rækker der er i salen.
-        "sæder_pr_række": 10,  # sætter hvor mange sæder der er i hver række.
-        # herunder laves en liste over alle sæder i salen,
-        # og sætter dem alle til "false",
+    # opretter en biografsal ved navn "Sal 1".
+    "Sal 1": {
+        # sætter hvor mange rækker der er i salen.
+        "rækker": 5,
+        # sætter hvor mange sæder der er i hver række.
+        "sæder_pr_række": 10,
+        # laver en liste over alle sæder i salen, og sætter dem alle til "false",
         # hvilket i denne sammenhæng betyder at de er ledige.
         "sæder": [[False] * 10 for i in range(5)],
-        "opt_sæder": [],  # laver en tom liste over optagede sæder.
+        # laver en tom liste over optagede sæder.
+        "opt_sæder": [],
         # viser hvilken film der kører i salen.
         "film": "Guardians of the Galaxy Vol. 3"
     },
