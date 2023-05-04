@@ -8,7 +8,7 @@ biograf = dict({
         "sæder_pr_række": 10,
         # laver en liste over alle sæder i salen, og sætter dem alle til "false",
         # hvilket i denne sammenhæng betyder at de er ledige.
-        "sæder": [[False] * 10 for i in range(5)],
+        "sæder": [10 * [False] for i in range(5)],
         # laver en tom liste over optagede sæder.
         "opt_sæder": [],
         # viser hvilken film der kører i salen.
@@ -17,14 +17,14 @@ biograf = dict({
     "Sal 2": {
         "rækker": 6,
         "sæder_pr_række": 8,
-        "sæder": [[False] * 8 for i in range(6)],
+        "sæder": [8 * [False] for i in range(6)],
         "opt_sæder": [],
         "film": "Underverden II"
     },
     "Sal 3": {
         "rækker": 4,
         "sæder_pr_række": 12,
-        "sæder": [[False] * 12 for i in range(4)],
+        "sæder": [12 * [False] for i in range(4)],
         "opt_sæder": [],
         "film": "The Fabelmans"
     }
