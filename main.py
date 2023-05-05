@@ -1,5 +1,5 @@
 # opretter en dictionary ved navn biograf.
-biograf = dict({
+biograf = {
     # opretter en biografsal ved navn "Sal 1".
     "Sal 1": {
         # sætter hvor mange rækker der er i salen.
@@ -28,7 +28,7 @@ biograf = dict({
         "opt_sæder": [],
         "film": "The Fabelmans"
     }
-})
+}
 
 
 def køb_billet(sal_nummer, række, sæde):
