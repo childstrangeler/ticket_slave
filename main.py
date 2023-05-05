@@ -56,7 +56,7 @@ def frie_sæder(sal_nummer):
             # hvis et sæde ikke er optaget printes dets række- og sæde nummer.
             if not optaget:
                 print("Række {}, Sæde {}".format(række, sæde))
-    print()
+    print("\n ")
 
 # troede det ville blive relevant at kunne tage fat i denne funktion,
 # andre steder i koden, men der var ikke tid til at bruge det til noget.
